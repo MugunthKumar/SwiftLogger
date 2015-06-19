@@ -67,8 +67,6 @@ on your Xcode Console
 Custom logging can be used in more powerful ways. 
 For example, you can use different loggers for different builds within your application
 
-```
-
 ---
 ###Licensing
 
