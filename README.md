@@ -1,5 +1,5 @@
 # SwiftLogger
-This is version 0.1 of SwiftLogger, A Logging framework written Swift
+This is version 0.1 of SwiftLogger, A Logging framework written in Swift
 
 ###Features
 * Simple, clean and elegant log framework written in Swift
