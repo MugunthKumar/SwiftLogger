@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+
+    Log.error("Error")
+    Log.warn("Warning")
+    Log.info("Info")
+    
+    Log.defaultLog = Log(
+      infoPrefix: "~~~", infoSuffix: "~~~",
+      warnPrefix: "!!!", warnSuffix: "!!!",
+      errorPrefix: "XXX", errorSuffix: "XXX")
+
+    Log.error("Error")
+    Log.warn("Warning")
+    Log.info("Info")
+
     return true
   }
 

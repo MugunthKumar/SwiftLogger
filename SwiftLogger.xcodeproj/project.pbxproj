@@ -13,6 +13,7 @@
 		ABC434671B33D95500AC86F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC434661B33D95500AC86F9 /* Images.xcassets */; };
 		ABC4346A1B33D95500AC86F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC434681B33D95500AC86F9 /* LaunchScreen.xib */; };
 		ABC434761B33D95500AC86F9 /* SwiftLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC434751B33D95500AC86F9 /* SwiftLoggerTests.swift */; };
+		ABC434801B33D97400AC86F9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4347F1B33D97400AC86F9 /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		ABC4346F1B33D95500AC86F9 /* SwiftLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC434741B33D95500AC86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC434751B33D95500AC86F9 /* SwiftLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoggerTests.swift; sourceTree = "<group>"; };
+		ABC4347F1B33D97400AC86F9 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		ABC4345C1B33D95500AC86F9 /* SwiftLogger */ = {
 			isa = PBXGroup;
 			children = (
+				ABC4347F1B33D97400AC86F9 /* Log.swift */,
 				ABC4345F1B33D95500AC86F9 /* AppDelegate.swift */,
 				ABC434611B33D95500AC86F9 /* ViewController.swift */,
 				ABC434631B33D95500AC86F9 /* Main.storyboard */,
@@ -156,7 +159,8 @@
 		ABC434521B33D95500AC86F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Steinlogic Consulting and Training Lte Ltd";
 				TargetAttributes = {
 					ABC434591B33D95500AC86F9 = {
@@ -214,6 +218,7 @@
 			files = (
 				ABC434621B33D95500AC86F9 /* ViewController.swift in Sources */,
 				ABC434601B33D95500AC86F9 /* AppDelegate.swift in Sources */,
+				ABC434801B33D97400AC86F9 /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +281,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -291,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +349,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steinlogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,7 +361,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steinlogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -371,7 +381,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SwiftLoggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steinlogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftLogger.app/SwiftLogger";
 			};
@@ -386,7 +398,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SwiftLoggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steinlogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftLogger.app/SwiftLogger";
 			};
@@ -411,6 +425,7 @@
 				ABC4347B1B33D95500AC86F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC4347C1B33D95500AC86F9 /* Build configuration list for PBXNativeTarget "SwiftLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +434,7 @@
 				ABC4347E1B33D95500AC86F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
