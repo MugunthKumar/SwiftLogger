@@ -20,15 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Log.error("Error")
     Log.warn("Warning")
     Log.info("Info")
-    
-    Log.defaultLog = Log(
-      infoPrefix: "~~~", infoSuffix: "~~~",
-      warnPrefix: "!!!", warnSuffix: "!!!",
-      errorPrefix: "XXX", errorSuffix: "XXX")
+
+    Log.defaultLog = Log.xcodeColorsLog
 
     Log.error("Error")
     Log.warn("Warning")
     Log.info("Info")
+
+    let customLog = Log(
+      infoPrefix: "~~~ ", infoSuffix: " ~~~",
+      warnPrefix: "!!! ", warnSuffix: " !!!",
+      errorPrefix: "XXX ", errorSuffix: " XXX")
+
+    customLog.error("Error")
+    customLog.warn("Warning")
+    customLog.info("Info")
+
 
     return true
   }
@@ -54,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
+  
+  
 }
 

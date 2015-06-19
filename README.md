@@ -12,7 +12,6 @@ As easy as copying ```Log.swift``` into your project and start using it.
 
 ###How to use
 You just start calling the methods ```info```, ```warn``` or ```error``` to log a message onto the console.
-The info and warning logs will automatically be hidden in release builds.
 
 ####Example
 ```
@@ -53,23 +52,27 @@ let customLog = Log(
   warnPrefix: "!!!", warnSuffix: " !!!",
   errorPrefix: "XXX ", errorSuffix: " XXX")
   
-customLog.info("Information message")
-customLog.warn("Error message")
-customLog.error("Error message")
+customLog.info("Info")
+customLog.warn("Warning")
+customLog.error("Error")
 ```
 displays
 ```
-application(_:didFinishLaunchingWithOptions:) [20] ~~~ Info ~~~í ½ErrorðŸš«
+application(_:didFinishLaunchingWithOptions:) [20] ~~~ Info ~~~
 application(_:didFinishLaunchingWithOptions:) [21] !!! Warning !!!
 application(_:didFinishLaunchingWithOptions:) [22] XXX Error XXX
 ```
 on your Xcode Console
+
+Custom logging can be used in more powerful ways. 
+For example, you can use different loggers for different builds within your application
+
 ```
 
 ---
 ###Licensing
 
-MKNetworkKit is licensed under MIT License
+SwiftLogger is licensed under MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -90,4 +93,6 @@ THE SOFTWARE.
 
 ---
 ###Attribution free licensing
-In case you need attribution free licensing for SwiftLogger, you can buy one from [my license store](http://blog.mugunthkumar.com/license-store/).
+In case you need attribution free licensing for SwiftLogger, 
+you can buy one from [my license store](http://blog.mugunthkumar.com/license-store/) 
+or email me @ mugunth.kumar@gmail.com
